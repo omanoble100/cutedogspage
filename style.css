@@ -141,7 +141,7 @@ img {
 
 
 .icons span:hover {
-    transform: rotate(-90deg);
+    scale: 1.5;
     background: white;
     
 }
@@ -162,9 +162,35 @@ img {
  } */
 
 
- @media (max-width:950px) {
+ @media (max-width:800px) {
     .card {
         display: block;
         padding-bottom: 10px ;
+    }
+
+    .card img {
+        height: 500px;
+    }
+ }
+
+ @media (max-width:450px){
+    .main-header h1 {
+        font-size: 3rem;
+    }
+
+    .card h3 {
+        width: 100%;
+    }
+
+    .card p {
+        font-size: 17px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .card > div {
+        margin: 1rem;
     }
  }
